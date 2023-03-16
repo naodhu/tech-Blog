@@ -9,6 +9,13 @@ The Tech Blog is built using a combination of technologies including Node.js, Ex
 * Contributing
 * License
 
+## screenshots
+<img width="1680" alt="Screen Shot 2023-03-17 at 00 10 27 am" src="https://user-images.githubusercontent.com/113915529/225627257-4233caf0-b939-41ec-be50-3c3e6ecdada0.png">
+<img width="1731" alt="Screen Shot 2023-03-17 at 00 10 32 am" src="https://user-images.githubusercontent.com/113915529/225627287-f30af140-fb23-42bc-b749-a80bc455f5a3.png">
+<img width="1677" alt="Screen Shot 2023-03-17 at 00 10 54 am" src="https://user-images.githubusercontent.com/113915529/225627319-c50618dd-6393-4adb-b3af-c2c13b4fc2b0.png">
+<img width="1690" alt="Screen Shot 2023-03-17 at 00 11 12 am" src="https://user-images.githubusercontent.com/113915529/225627359-14d47e4b-ff0f-45e4-90d1-f0439868667d.png">
+
+
 
 ## Installation
 To install the Tech Blog application, follow the steps below:
