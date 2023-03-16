@@ -1,0 +1,14 @@
+[
+  {
+    "blog_title": "The Art of Cooking",
+    "description": "A cooking website that offers step-by-step guides and tutorials for creating delicious meals from all around the world."
+  },
+  {
+    "blog_title": "Fitness Tracker",
+    "description": "A mobile app that allows users to track their daily exercise routines and provides personalized workout plans."
+  },
+  {
+    "blog_title": "Travel Diary",
+    "description": "A web app that helps users plan and organize their travel itineraries, and provides a platform for sharing travel stories and photos with friends and family."
+  }
+]

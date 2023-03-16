@@ -1,0 +1,13 @@
+[
+  {
+    "blog_id": 1,
+    "comment_description": "This is a great app that will notify you when there's a concert in your area.",
+    "user_id": 1
+  },
+  {
+    "blog_id": 2,
+    "comment_description": "I love this web app that gives me daily technical questions and helps me track my progress in programming, cybersecurity, and database architecture!",
+    "user_id": 2
+  },
+  { "blog_id": 3, "comment_description": "Awesome game!", "user_id": 3 }
+]
