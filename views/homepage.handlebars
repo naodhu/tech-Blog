@@ -1,19 +1,19 @@
-
+<!-- Loop over each object in the blogs array -->
 {{#each blogs as |blog|}}
-  <div class="row mb-4 blog">
+  <div class="row mb-4 blog shadow-lg p-3 bg-white rounded">
     <div class="col-md-5">
       <h2>
-
-        <a href="/blog/{{blog.id}}">{{blog.blog_title}}</a>
+        <!-- Call helper function with triple brackets -->
+        <a href="/blog/{{blog.id}}" class="text-decoration-none text-dark">{{blog.blog_title}}</a>
       </h2>
-
-      <p>Created by
-        {{blog.user.username}}
+      <p class="text-muted">Created by
+        <strong>{{blog.user.username}}</strong>
         on
-        {{format_date blog.date_created}}</p>
+        {{format_date blog.date_created}}
+      </p>
     </div>
     <div class="col-md-7">
-      <p>
+      <p class="text-justify">
         {{blog.description}}
       </p>
     </div>

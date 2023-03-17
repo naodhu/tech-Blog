@@ -1,6 +1,6 @@
 // Import necessary packages and configuration
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection");
 
 // Define Comment model by extending Sequelize's Model class
 class Comment extends Model {}
@@ -14,7 +14,7 @@ Comment.init(
       primaryKey: true,
       autoIncrement: true,
     },
- 
+
     comment_description: {
       type: DataTypes.STRING,
     },
@@ -23,20 +23,20 @@ Comment.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-    
+
     blog_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'blog',
-        key: 'id',
+        model: "blog",
+        key: "id",
       },
     },
 
     user_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'user',
-        key: 'id',
+        model: "user",
+        key: "id",
       },
     },
   },
@@ -45,7 +45,7 @@ Comment.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'comment',
+    modelName: "comment",
   }
 );
 

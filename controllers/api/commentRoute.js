@@ -1,36 +1,36 @@
 // Import the Express Router and the Comment model
-const router = require('express').Router();
-const { Comment } = require('../../models');
+const router = require("express").Router();
+const { Comment } = require("../../models");
 
 // Import the withAuth middleware for authentication
-const withAuth = require('../../utils/auth');
+const withAuth = require("../../utils/auth");
 
 // Find all comments using a GET request
-router.get('/', (req,res) => {
-    Comment.findAll({})
-    .then(commentData => res.json(commentData))
-    .catch(err => {
-        console.log(err);
-        res.status(500).json(err)
+router.get("/", (req, res) => {
+  Comment.findAll({})
+    .then((commentData) => res.json(commentData))
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
     });
 });
 
 // Find a specific comment by id using a GET request
-router.get('/:id', (req, res) => {
-    Comment.findAll({
-            where: {
-                id: req.params.id
-            }
-        })
-        .then(commentData => res.json(commentData))
-        .catch(err => {
-            console.log(err);
-            res.status(500).json(err);
-        })
+router.get("/:id", (req, res) => {
+  Comment.findAll({
+    where: {
+      id: req.params.id,
+    },
+  })
+    .then((commentData) => res.json(commentData))
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
 });
 
 // Create a new comment using a POST request
-router.post('/', async (req, res) => {
+router.post("/", async (req, res) => {
   try {
     // Create a new comment using the Comment model and the request body
     // Set the userId to the current user's id using the session
@@ -47,7 +47,7 @@ router.post('/', async (req, res) => {
 });
 
 // Delete a comment using a DELETE request
-router.delete('/:id', withAuth, async (req, res) => {
+router.delete("/:id", withAuth, async (req, res) => {
   try {
     // Delete the comment where the id matches the request parameter and the user_id matches the session
     const commentData = await Comment.destroy({
@@ -58,7 +58,7 @@ router.delete('/:id', withAuth, async (req, res) => {
     });
     // If no comment is found with the given id and user_id, send a JSON response with an error message and a status code of 404
     if (!commentData) {
-      res.status(404).json({ message: 'No comment found with this id!' });
+      res.status(404).json({ message: "No comment found with this id!" });
       return;
     }
     // If successful, send a JSON response with the deleted comment data and a status code of 200

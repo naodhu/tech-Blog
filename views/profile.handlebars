@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-auto">
-    <h2>Welcome, {{username}}!</h2> 
+    <h2 class="font-weight-bold">Welcome, {{username}}!</h2> 
   </div>
 </div>
 
@@ -8,15 +8,15 @@
   <div class="col-md-6">
     <h3>Create a New Blog:</h3>
 
-    <form class="form new-blog-form">
-      <div class="form-group box-sizing">
+    <form class="new-blog-form">
+      <div class="form-group">
         <label for="blog-blog_title">Blog Title:</label>
-        <input class="form-input" type="text" id="blog-blog_title" blog_title="blog-blog_title" />
+        <input class="form-control" type="text" id="blog-blog_title" blog_title="blog-blog_title" />
       </div>
     
       <div class="form-group">
-        <label for="blog-desc">description:</label>
-        <textarea class="form-input" id="blog-desc" blog_title="blog-desc"></textarea>
+        <label for="blog-desc">Description:</label>
+        <textarea class="form-control" id="blog-desc" blog_title="blog-desc" rows="5"></textarea>
       </div>
       <div class="form-group">
         <button type="submit" class="btn btn-primary">Create</button>
@@ -31,7 +31,7 @@
     {{#each blogs as |blog|}}
     <div class="row mb-2">
       <div class="col-md-8">
-        <h4><a href="/blog/{{blog.id}}">{{blog.blog_title}}</a></h4>
+        <h4><a href="/blog/{{blog.id}}" class="text-decoration-none text-dark">{{blog.blog_title}}</a></h4>
       </div>
       <div class="col-md-4">
         <button class="btn btn-sm btn-danger" data-id="{{blog.id}}">DELETE</button>

@@ -1,12 +1,12 @@
 // Import the Express Router and the Blog model
-const router = require('express').Router();
-const { Blog } = require('../../models');
+const router = require("express").Router();
+const { Blog } = require("../../models");
 
 // Import the withAuth middleware for authentication
-const withAuth = require('../../utils/auth');
+const withAuth = require("../../utils/auth");
 
 // Create a new blog using a POST request
-router.post('/', withAuth, async (req, res) => {
+router.post("/", withAuth, async (req, res) => {
   try {
     // Create a new blog using the Blog model and the request body
     // Set the user_id to the current user's id using the session
@@ -24,7 +24,7 @@ router.post('/', withAuth, async (req, res) => {
 });
 
 // Delete a blog using a DELETE request
-router.delete('/:id', withAuth, async (req, res) => {
+router.delete("/:id", withAuth, async (req, res) => {
   try {
     // Delete the blog where the id matches the request parameter and the user_id matches the session
     const blogData = await Blog.destroy({
@@ -36,7 +36,7 @@ router.delete('/:id', withAuth, async (req, res) => {
 
     // If no blog is found with the given id and user_id, send a JSON response with an error message and a status code of 404
     if (!blogData) {
-      res.status(404).json({ message: 'No blog found with this id!' });
+      res.status(404).json({ message: "No blog found with this id!" });
       return;
     }
 

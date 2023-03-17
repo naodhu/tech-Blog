@@ -1,47 +1,98 @@
+<!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tech Blog</title>
-    <link rel="stylesheet" href="/css/jass.css" />
-    <link rel="stylesheet" href="/css/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Blog</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-  </head>
+    .navbar {
+      background-color: #333;
+      padding: 0.5rem 1rem;
+      font-size: 1.2rem;
+    }
 
-  <body>
-    <div class="flex-column justify-space-around">
-      <header class="hero">
-        <h1 class="title">The Tech Blog</h1>
-        <nav class="nav">
-          <a href="/">Home</a>
-          <!-- Conditionally render login or logout links -->
-          {{#if logged_in}}
-            <a href="/profile">Dashboard</a>
-            |
+    .navbar-brand {
+      font-size: 2rem;
+      margin-right: 1rem;
+      color: white;
+      text-decoration: none;
+    }
 
-            <button class="no-button" id="logout">logout</button>
-          {{else}}
-            <a href="/login">Login</a>
-          {{/if}}
+    .navbar-nav .nav-item .nav-link {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      transition: background-color 0.2s;
+    }
 
-        </nav>
-      </header>
-      <main class="container container-fluid mt-5">
-        <!-- Render the sub layout -->
-        {{{body}}}
-      </main>
-      <footer>
+    .navbar-nav .nav-item .nav-link:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
 
-      </footer>
+    .no-button {
+      background-color: transparent;
+      border: none;
+      color: white;
+      font-size: 1.2rem;
+    }
+
+    main {
+      margin-top: 2rem;
+    }
+  </style>
+  <link rel="stylesheet" href="/css/jass.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md">
+    <a class="navbar-brand" href="/">The Tech Blog</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:white;"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        {{#if logged_in}}
+        <li class="nav-item">
+          <a class="nav-link" href="/profile">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <button class="no-button" id="logout">Logout</button>
+        </li>
+        {{else}}
+        <li class="nav-item">
+          <a class="nav-link" href="/login">Login</a>
+        </li>
+        {{/if}}
+      </ul>
     </div>
+  </nav>
+  <main class="container container-fluid">
+    <!-- Render the sub layout -->
+    {{{body}}}
+  </main>
+  <footer>
 
-    <!-- Render script for logged in users only -->
-    {{#if logged_in}}
-      <script src="/js/logout.js"></script>
-    {{/if}}
+  </footer>
 
-    <script src="/js/comment.js"></script>
-  </body>
+  <!-- Render script for logged in users only -->
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
 
-</html>
+  <script src="/js/comment.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html
