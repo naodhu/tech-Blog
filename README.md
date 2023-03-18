@@ -10,10 +10,10 @@ The Tech Blog is built using a combination of technologies including Node.js, Ex
 * License
 
 ## screenshots
-<img width="1680" alt="Screen Shot 2023-03-17 at 00 10 27 am" src="https://user-images.githubusercontent.com/113915529/225627257-4233caf0-b939-41ec-be50-3c3e6ecdada0.png">
-<img width="1731" alt="Screen Shot 2023-03-17 at 00 10 32 am" src="https://user-images.githubusercontent.com/113915529/225627287-f30af140-fb23-42bc-b749-a80bc455f5a3.png">
-<img width="1677" alt="Screen Shot 2023-03-17 at 00 10 54 am" src="https://user-images.githubusercontent.com/113915529/225627319-c50618dd-6393-4adb-b3af-c2c13b4fc2b0.png">
-<img width="1690" alt="Screen Shot 2023-03-17 at 00 11 12 am" src="https://user-images.githubusercontent.com/113915529/225627359-14d47e4b-ff0f-45e4-90d1-f0439868667d.png">
+<img width="2999" alt="Screenshot 2023-03-18 at 1 33 23 pm" src="https://user-images.githubusercontent.com/113915529/226078691-f7f5981e-0a7a-4605-85de-936a9ab55a5b.png">
+<img width="2999" alt="Screenshot 2023-03-18 at 1 33 53 pm" src="https://user-images.githubusercontent.com/113915529/226078718-1b35df06-63a0-4c67-b231-b8820a6c0207.png">
+<img width="2999" alt="Screenshot 2023-03-18 at 1 34 05 pm" src="https://user-images.githubusercontent.com/113915529/226078734-89ab280b-cf79-4aee-bb15-182097b1acbd.png">
+<img width="2999" alt="Screenshot 2023-03-18 at 1 34 13 pm" src="https://user-images.githubusercontent.com/113915529/226078754-7719e69c-b3b2-44bd-9b12-9e4870ac1a74.png">
 
 
 
