@@ -15,6 +15,16 @@ The Tech Blog is built using a combination of technologies including Node.js, Ex
 <img width="2999" alt="Screenshot 2023-03-18 at 1 34 05 pm" src="https://user-images.githubusercontent.com/113915529/226078734-89ab280b-cf79-4aee-bb15-182097b1acbd.png">
 <img width="2999" alt="Screenshot 2023-03-18 at 1 34 13 pm" src="https://user-images.githubusercontent.com/113915529/226078754-7719e69c-b3b2-44bd-9b12-9e4870ac1a74.png">
 
+# Demo
+
+https://user-images.githubusercontent.com/113915529/226079410-85d192f3-2b82-4e22-b9cc-32c710192a11.mov
+
+
+
+https://user-images.githubusercontent.com/113915529/226079449-07627142-e83e-4e54-9c87-81fab7734b6c.mov
+
+
+
 
 
 ## Installation
