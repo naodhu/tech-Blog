@@ -8,10 +8,12 @@
     "start": "node server.js",
     "seed": "node seeds/seed.js",
     "heroku-postbuild": "npm rebuild bcrypt --build-from-source"
-
   },
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "bcrypt": "^5.1.0",
     "connect-session-sequelize": "^7.1.5",
